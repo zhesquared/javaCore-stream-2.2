@@ -20,7 +20,7 @@ public class Main {
         }
 
         long minorStream = persons.stream()
-                .filter(person -> person.getAge() > 18)
+                .filter(person -> person.getAge() < 18)
                 .count();
 
         List<String> recruitStream = persons.stream()
